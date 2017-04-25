@@ -2,7 +2,7 @@
 % Please edit documentation in R/fetchGenebank.R
 \name{fetchGenebank}
 \alias{fetchGenebank}
-\title{A function that takes a list of UID and returns a genebank files #}
+\title{A function that takes a list of UID and returns a genebank files}
 \usage{
 fetchGenebank(UIDs)
 }

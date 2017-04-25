@@ -1,4 +1,4 @@
-#' A function that takes a list of UID and returns a genebank files #
+#' A function that takes a list of UID and returns a genebank files 
 #' 
 #' This function will allow you to enter a list of protien/gene names and convert the into NCBI unique IDs. It will return a list. 
 #' The first element will be your UIDs the second element will have the protien/gene names that were not matched to an ID. 
@@ -14,7 +14,7 @@
 
 fetchGenebank <- function(UIDs) 
   { 
-  files <- function(id){ return(efetch(id, db=db, rettype = 'gp', retmode = retmode, retmax = returnAmount))}
+  files <- function(id){ return(efetch(id, db= 'protein', rettype = 'gp', retmode = 'text', retmax = 1))}
   
   getFetchSeq <- function(gbfile){
     rec <- gbRecord(gbfile)
