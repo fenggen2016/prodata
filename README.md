@@ -5,24 +5,24 @@ An R package for retrieving protien sequence, counting select PTMs, and calculat
 
 To use this package you should start out with a list of mouse genes or protiens. If you only have a list of human genes you can use the `humanMouse()` function to convert your human genes.
 
-'''R
+```R
 genelist <- humanMouse(humagenes)
-'''R
+```
 
 After you have your mouse gene list you can start to process it. The first function you should use is `getUID()`. This will take your list and turn into NCBI unique IDs. The list will have two elements. The first UIDs and the second Missing, which are the protien names that did not return a UID. These can then be used to get protien data. 
 
-'''R
+```R
 ids <- getUID(genelist)
-'''R
+```
 
 Now that you have the ID list you can feed this into the  `fetchGenebank()` function. This will fetch and parse the genebank file connected with each UID. This parses the protien sequence into the sequence and its subregions. Therefore you will end up with many more lines of data then your genelist. 
 
-'''R
+```R
 files <- fetchGenebank(ids$UIDs)
-'''R
+```
 
 Finaly you can use the the  `molecW()` function to calculate the molecular weight without PTMs and with PTMS (methalyation and disulfide bonds). This returns to you the final data table.
 
-'''R
+```R
 finaldf <- molecW(files)
-'''R
+```
