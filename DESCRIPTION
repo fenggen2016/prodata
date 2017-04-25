@@ -1,0 +1,21 @@
+Package: prodata
+Title: Builds Protien Sequence And Subregion Molecular Weight Database. 
+Version: 1.0
+Authors@R: person("Mohamedhakim", "Elakhrass", email = "mohamedhakim.elakhrass@kuleuven.be", role = c("aut", "cre"))
+Description: Given a list of protiens this package will build a database of the protien sequence, the sub region sequence, the M and CC PTMS, and the molecular weights.
+Depends: 
+  R (>= 3.3.3),
+  Peptides (>= 2.0.0),
+  reutils (>= 0.2.3),
+  Biostrings (>= 2.42.1),
+  data.table (>= 1.10.4),
+  plyr (>= 1.8.4),
+  biomaRt (>= 2.30.0),
+  devtools (>= 1.12.0),
+  tibble (>= 1.3.0),
+  stringr (>= 1.2.0)
+Remotes: github::gschofl/biofiles
+License: GNU GENERAL PUBLIC LICENSE V3.0
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
