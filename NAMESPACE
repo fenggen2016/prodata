@@ -2,4 +2,6 @@
 
 export(fetchGenebank)
 export(getUID)
+export(humanMouse)
+export(molecW)
 export(molecw)
