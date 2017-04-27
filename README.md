@@ -21,8 +21,13 @@ Now that you have the ID list you can feed this into the  `fetchGenebank()` func
 files <- fetchGenebank(ids$UIDs)
 ```
 
-Finaly you can use the the  `molecW()` function to calculate the molecular weight without PTMs and with PTMS (methalyation and disulfide bonds). This returns to you the final data table.
+You can use the the  `molecW()` function to calculate the molecular weight without PTMs and with PTMS (methalyation and disulfide bonds). This returns to you the final data table.
 
 ```R
 finaldf <- molecW(files)
+```
+To filter the data by molecular weight range you can use the `searchpro()` function. It will allow you to pin point an exact range of MW, including or not including PTM calculations. 
+
+```R
+searchpro(finaldf, range = 2000:10000, predicted = TRUE)
 ```
