@@ -6,6 +6,7 @@
 #' 
 #' 
 #' @param df df produced by the fetchGenebank() function or where the sequence column is named seq.
+#' @param monoisotopic A logical value TRUE or False indicating if monoistopic weights of amino-acids should be used
 #' @keywords Molecular Weight, PTMs
 #' @export
 #' @examples
@@ -14,9 +15,9 @@
 
 
 
-molecW <-function(df){
+molecW <-function(df, monoisotopic = FALSE){
 
-  df$molecularweight <- mw(df$seq)
+  df$molecularweight <- mw(df$seq, monoisotopic = monoisotopic)
 
   df$m <- str_count(df$seq, 'm')
   df$cc <- str_count(df$seq, 'cc')
