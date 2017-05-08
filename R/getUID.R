@@ -34,8 +34,7 @@ getUID <- function(protien_gene_list, baseterm, db){
   missing <- subset(myDF, logicm)
   #Omitting protiens that didn't return a UID
   myDF <- na.omit(myDF)  
-  #cleaning data frame 
-  myDF[,1] <- NULL
+ 
   
   #making the UIDs into a list
   gene_list <- myDF$UID
