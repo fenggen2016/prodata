@@ -4,7 +4,8 @@
 \alias{getUID}
 \title{A function that takes a  protien/genelist and returns the Unique ID number of NCBI}
 \usage{
-getUID(protien_gene_list, baseterm, db)
+getUID(protien_gene_list,
+  baseterm = "[Protein Name] AND Mus musculus[Organism]", db = "protien")
 }
 \arguments{
 \item{protien_gene_list}{List of protiens or genes.}
@@ -19,7 +20,7 @@ The first element will be your UIDs the second element will have the protien/gen
 }
 \examples{
 
-uids <- getUID(protien_gene_list, "[Protein Name] AND Mus musculus[Organism]", "protien" )
+uids <- getUID(protien_gene_list, baseterm = "[Protein Name] AND Mus musculus[Organism]", db = "protien" )
 }
 \keyword{NCBI,}
 \keyword{UIDs}

@@ -2,22 +2,22 @@
 % Please edit documentation in R/fetchGenebank.R
 \name{fetchGenebank}
 \alias{fetchGenebank}
-\title{A function that takes a list of UID and returns a genebank files}
+\title{A function that takes a list of UIDs and returns a genebank files}
 \usage{
-fetchGenebank(UIDs)
+fetchGenebank(UIDss)
 }
 \arguments{
-\item{UIDs}{List of NCBI UIDs.}
+\item{UIDss}{List of NCBI UIDss.}
 }
 \description{
 This function will allow you to enter a list of protien/gene names and convert the into NCBI unique IDs. It will return a list. 
-The first element will be your UIDs the second element will have the protien/gene names that were not matched to an ID.
+The first element will be your UIDss the second element will have the protien/gene names that were not matched to an ID.
 }
 \examples{
 
-df <- fetchGenebankl(UIDs)
+df <- fetchGenebankl(UIDss)
 }
 \keyword{NCBI,}
-\keyword{UIDs,}
+\keyword{UIDss,}
 \keyword{genebank,}
 \keyword{parsing}

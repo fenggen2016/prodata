@@ -12,10 +12,10 @@
 #' @export
 #' @examples
 #'
-#' uids <- getUID(protien_gene_list, "[Protein Name] AND Mus musculus[Organism]", "protien" )
+#' uids <- getUID(protien_gene_list, baseterm = "[Protein Name] AND Mus musculus[Organism]", db = "protien" )
 
 
-getUID <- function(protien_gene_list, baseterm, db){
+getUID <- function(protien_gene_list, baseterm = "[Protein Name] AND Mus musculus[Organism]", db = "protien"){
   
   uid1 <- function(protien){
     

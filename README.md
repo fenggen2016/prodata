@@ -1,5 +1,5 @@
 # prodata
-An R package for retrieving protien sequence, counting select PTMs, and calculating the molecular weight. This is currently focusing on mouse protiens but may be expanded later.
+An R package for retrieving protien sequence, counting  PTMs, and calculating the molecular weight. This is currently focusing on mouse protiens but may be expanded later. The molecular weight is calculated use the effect of the experimentally verified PTMs. 
 
 ## How to use
 
