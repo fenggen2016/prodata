@@ -15,6 +15,7 @@
 ptmClean <- function(ptmdf){
   conversion$Old <- trimws(conversion$Old, which = c("both", "left", "right"))
   
+  ptmdf$type <- as.character(ptmdf$type)
   conversion$Old<- as.character(conversion$Old)
   conversion$New <- as.character(conversion$New)
   
