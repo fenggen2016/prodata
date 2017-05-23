@@ -12,27 +12,35 @@
 #'
 #' df <- fetchGenebankl(UIDs)
 
-fetchGenebank <- function(UIDs) 
-  { 
+fetchGenebank <- function(UIDs) {
+  
   files <- function(id){ return(efetch(id, db= 'protein', rettype = 'gp', retmode = 'text', retmax = 1))}
   
   getFetchSeq <- function(gbfile){
     rec <- gbRecord(gbfile)
     tryCatch(seq <- biofiles::getSequence((ft(rec))), error=function(e) NULL)
-    protienName <- names(seq)
+    protienName <- unique(names(seq))
     m <- data.frame(seq)
     m <- add_column(m, protienName, .after = 0)
     return(m)
   }
+  
   #Using lapply over the UIDs to retrive genebank file 
-  df1 <- lapply(UIDs, files)
+  df1 <- lapply(UID, files)
   #Using lapply over the genebank files to retrive sequences of protien and sub region
   df2 <- lapply(df1, getFetchSeq)
+  
+  for(i in 1:length(df2)){
+    df2[[i]]$geneid <- UID[i]
+  }
   #Concatonating the list into a data frame 
   df3 <- do.call(rbind.data.frame, df2)
   #Filtering for Protien and protien regions 
   logvec <- grepl('(Protein)|(Region)', df3$protienName)
   df4 <- subset(df3, logvec) 
-  return(df4)
+  df5 <- molecW(df4)
   
-}
+  
+  return(df5)
+  
+  }

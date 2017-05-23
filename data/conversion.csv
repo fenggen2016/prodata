@@ -1,0 +1,30 @@
+"","Old","New","Weight"
+"1","N-acetylmethionine","Acetylation",42.038
+"2","N6-acetyllysine","Acetylation",42.038
+"3","N-acetylserine  ","Acetylation",42.038
+"4","N-acetylproline","Acetylation",42.038
+"5","N-acetylalanine","Acetylation",42.038
+"6","ADP-ribosylserine","ADPylation",541.3052
+"7","ADP-ribosylcysteine","ADPylation",541.3052
+"8","ADP-ribosylarginine","ADPylation",541.3052
+"9","4-carboxyglutamate","Carboxyglutamate",44.01
+"10","Cysteine methyl ester","Cysteine_methyl_ester",32.04
+"11","Cysteine persulfide","Cysteine_persulfide",66.14
+"12","Asymmetric_dimethylarginine","Dimethylation",28.0538
+"13","Symmetric_dimethylarginine","Dimethylation",28.0538
+"14","Disulfide bond","Disulfide_bond",-2.0159
+"15","5-hydroxylysine","Hydroxylation",15.997
+"16","4-hydroxyproline","Hydroxylation",15.997
+"17","(3S)-3-hydroxyasparagine","Hydroxylation",15.997
+"18","Methionine sulfoxide","Methionine_sulfoxide",15.9994
+"19","Omega-N-methylarginine  ","Methylation",14.0269
+"20","N6-methyllysine","Methylation",14.0269
+"21","Nitrated tyrosine","Nitrated_tyrosine",45
+"22","3-oxoalanine (Cys)","Oxoalanine",13.987
+"23","Phosphoserine ","Phosphorylation",79.9799
+"24","Phosphotyrosine","Phosphorylation",79.9799
+"25","Phosphothreonine","Phosphorylation",79.9799
+"26","Pyrrolidone carboxylic acid","Pyrrolidone_carboxylic_acid",-17.03
+"27","S-nitrosocysteine","S_nitrosocysteine",28.996
+"28","N6-succinyllysine","Succinylation",118.09
+"29","Sulfotyrosine","Sulfation",96.06

@@ -4,10 +4,12 @@
 \alias{molecW}
 \title{A function that takes a dataframe produced by the fetchGenebank() function and returns PTMS and molecular weight}
 \usage{
-molecW(df)
+molecW(df, monoisotopic = FALSE)
 }
 \arguments{
 \item{df}{df produced by the fetchGenebank() function or where the sequence column is named seq.}
+
+\item{monoisotopic}{A logical value TRUE or False indicating if monoistopic weights of amino-acids should be used}
 }
 \description{
 This function takes a dataframe produced by the fetchGenebank() function and returns PTMS and molcular weights via extra columns in the data frame.
