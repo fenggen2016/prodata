@@ -18,7 +18,7 @@ colnames(ptmdf)[1] <- "UNIPROTKB"
 ptmdf$score <- NULL
 ptmdf$source <- NULL
 ptmdf$strand <- NULL
-ptmdf$ptmdfase <- NULL
+ptmdf$phase <- NULL
 
 ptmdf$attributes <- gsub(pattern = ';.*$', "", ptmdf$attributes)
 aam <- c('Non-standard residue', 'Modified residue', 'Lipidation', 'Glycosylation', 'Disulfide bond', 'Cross-link')
