@@ -4,7 +4,7 @@
 \alias{fetchGenebank}
 \title{A function that takes a list of UIDs and returns a genebank files}
 \usage{
-fetchGenebank(UIDss)
+fetchGenebank(UIDs)
 }
 \arguments{
 \item{UIDss}{List of NCBI UIDss.}

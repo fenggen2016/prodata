@@ -12,7 +12,7 @@
 #'
 #' df <- fetchGenebankl(UIDss)
 
-fetchGenebank <- function(UIDss) {
+fetchGenebank <- function(UIDs) {
   
   files <- function(id){ return(efetch(id, db= 'protein', rettype = 'gp', retmode = 'text', retmax = 1))}
   
