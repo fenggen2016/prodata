@@ -15,7 +15,8 @@ Depends:
   stringr (>= 1.2.0),
   biofiles (>= 0.0),
   UniProt.ws (>= 2.16.0),
-  ape (>= 4.1)
+  ape (>= 4.1),
+  tibble (>= 1.2)
 Remotes: github::gschofl/biofiles
 License: GNU GENERAL PUBLIC LICENSE V3.0
 Encoding: UTF-8
