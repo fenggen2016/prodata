@@ -16,7 +16,9 @@ Depends:
   biofiles (>= 0.0),
   UniProt.ws (>= 2.16.0),
   ape (>= 4.1),
-  tibble (>= 1.2)
+  tibble (>= 1.2),
+  shiny (>= 1.0.3),
+  DT (>= 0.2)
 Remotes: github::gschofl/biofiles
 License: GNU GENERAL PUBLIC LICENSE V3.0
 Encoding: UTF-8

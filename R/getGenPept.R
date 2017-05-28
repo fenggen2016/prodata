@@ -1,4 +1,4 @@
-#' A function that takes a list of UIDs and returns a genebank files 
+#' A function that takes a list of UIDs and returns a genPept files 
 #' 
 #' This function will allow you to enter a list of protien/gene names and convert the into NCBI unique IDs. It will return a list. 
 #' The first element will be your UIDss the second element will have the protien/gene names that were not matched to an ID. 
@@ -6,13 +6,13 @@
 #' 
 #' 
 #' @param UIDss List of NCBI UIDss. 
-#' @keywords NCBI, UIDss, genebank, parsing
+#' @keywords NCBI, UIDss, genPept, parsing
 #' @export
 #' @examples
 #'
-#' df <- fetchGenebankl(UIDss)
+#' df <- getGenPept(UIDss)
 
-fetchGenebank <- function(UIDs) {
+getGenPept <- function(UIDs) {
   
   files <- function(id){ return(efetch(id, db= 'protein', rettype = 'gp', retmode = 'text', retmax = 1))}
   
