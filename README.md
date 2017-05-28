@@ -15,10 +15,10 @@ After you have your mouse gene list you can start to process it. The first funct
 ids <- getUID(genelist)
 ```
 
-Now that you have the ID list you can feed this into the  `fetchGenebank()` function. This will fetch and parse the genebank file connected with each UID. This parses the protien sequence into the sequence and its subregions. It will also return the molecular weight of your protein without taking into account PTMs. Therefore you will end up with many more lines of data then your genelist. 
+Now that you have the ID list you can feed this into the  `getGenePept()` function. This will fetch and parse the genebank file connected with each UID. This parses the protien sequence into the sequence and its subregions. It will also return the molecular weight of your protein without taking into account PTMs. Therefore you will end up with many more lines of data then your genelist. 
 
 ```R
-files <- fetchGenebank(ids$UIDs)
+files <- getGenPept(ids$UIDs)
 ```
 
 The list of gene IDs should also be fed through the `unip()` function. This will do two things, return a variable which contains UIDs linked to UNIPROTKB and write to a file called uniprot.txt. This file should then be used with this https://github.com/jdrudolph/uniprot. The file should retrieve gff entries from UNIPROT. The output file should be named output.txt. 
