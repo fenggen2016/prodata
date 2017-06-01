@@ -14,9 +14,9 @@ List of protiens that are active in a diabetic mouse pancreas. This can be used 
 \examples{
 data(keyplayers)
 
-ids <- getUID(keyplayers, "[Protein Name] AND Mus musculus[Organism]", "protien" ))
+ids <- getUID(keyplayers, "[Protein Name] AND Mus musculus[Organism]", db = "protein" ))
 
-proteindf <- fetchGenebank(ids$UIDs)
+proteindf <- getGenPept(ids$UIDs)
 res <- unip(id$UIDs)
 
 ptmdf <- readPTM(file = 'output.txt')
