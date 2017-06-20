@@ -14,18 +14,20 @@
 #' @examples
 #' data(keyplayers)
 #' 
-#' ids <- getUID(keyplayers, "[Protein Name] AND Mus musculus[Organism]", db = "protein" ))
-#' 
+#' ids <- getUID(keyplayers, "[Protein Name] AND Mus musculus[Organism]", "protein" )
+#'
 #' proteindf <- getGenPept(ids$UIDs)
-#' res <- unip(id$UIDs)
-#' 
-#' ptmdf <- readPTM(file = 'output.txt')
+#' res <- unip(ids$UIDs)
+#' #here you must run the command lind tool found here: https://github.com/jdrudolph/uniprot
+#' # res() will also a file called uniprot.txt in your working directory, this can be used with the tool
+#' # like this: uniprot retrieve -f gff uniprot.txt output.txt 
+#' ptmdf <- readPTM('output.txt')
 #' ptmdf <- ptm(ptmdf, res)
 #' ptmdf <- ptmClean(ptmdf)
-#' 
 #' proteindf <- countPTMs(proteindf, ptmdf)
-#' finaldf <- predictedMW(proteindf, ptmdf)
-#' 
+#'finaldf <- predictedMW(proteindf, ptmdf)
+#'
+#'viz(finaldf)
 #' 
 #' 
 #' 
