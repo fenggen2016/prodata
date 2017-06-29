@@ -50,3 +50,13 @@ searchpro(finaldf, range = 2000:10000, predicted = TRUE)
 ```
 
 Attached to this R package are two important things. The first is the `keyplayers` proteins list. This can be used as a test proteins list to help you get hang of the package. The second is the `conversions` data which contains the PTMs and their molecular weights. This is used by various functions within the package. If you have any suggestions or questions feel free to contact me. 
+
+
+```R
+viz(finaldf)
+```
+
+The `viz()` function launched a shiny application using the final dataframe.
+
+If you have any suggestions or questions feel free to contact me. 
+
