@@ -1,5 +1,7 @@
 # prodata
-An R package for retrieving protien sequence, counting  PTMs, and calculating the molecular weight. This is currently focusing on mouse protiens but may be expanded later. The molecular weight is calculated use the effect of the experimentally verified PTMs. 
+An R package for retrieving protien sequence, counting  PTMs, and calculating the molecular weight. This is currently focusing on mouse protiens but may be expanded later. The molecular weight is calculated using the effect of the PTMs. 
+
+This package was built to narrow the search space for the identification of proteins imaged in an IMS experiment. Data from Uniprot and NCBI are merged together to created final comprehensive dataset to help with identification new proteins or peptides. A full video tutorial can be found here https://www.youtube.com/watch?v=YKKxj1O1Dn0
 
 ## How to use
 
